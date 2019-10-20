@@ -7,6 +7,7 @@
 
 #include "DieWithMessage.h"
 #include "TCPServerUtility.h"
+#include "Acceptor.h"
 
 
 #endif //SOCKET_SERVER_PRACTICAL_H

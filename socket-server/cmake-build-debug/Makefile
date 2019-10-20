@@ -123,6 +123,33 @@ socket_server/fast:
 	$(MAKE) -f CMakeFiles/socket_server.dir/build.make CMakeFiles/socket_server.dir/build
 .PHONY : socket_server/fast
 
+Acceptor.o: Acceptor.c.o
+
+.PHONY : Acceptor.o
+
+# target to build an object file
+Acceptor.c.o:
+	$(MAKE) -f CMakeFiles/socket_server.dir/build.make CMakeFiles/socket_server.dir/Acceptor.c.o
+.PHONY : Acceptor.c.o
+
+Acceptor.i: Acceptor.c.i
+
+.PHONY : Acceptor.i
+
+# target to preprocess a source file
+Acceptor.c.i:
+	$(MAKE) -f CMakeFiles/socket_server.dir/build.make CMakeFiles/socket_server.dir/Acceptor.c.i
+.PHONY : Acceptor.c.i
+
+Acceptor.s: Acceptor.c.s
+
+.PHONY : Acceptor.s
+
+# target to generate assembly for a file
+Acceptor.c.s:
+	$(MAKE) -f CMakeFiles/socket_server.dir/build.make CMakeFiles/socket_server.dir/Acceptor.c.s
+.PHONY : Acceptor.c.s
+
 DieWithMessage.o: DieWithMessage.c.o
 
 .PHONY : DieWithMessage.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... socket_server"
+	@echo "... Acceptor.o"
+	@echo "... Acceptor.i"
+	@echo "... Acceptor.s"
 	@echo "... DieWithMessage.o"
 	@echo "... DieWithMessage.i"
 	@echo "... DieWithMessage.s"
