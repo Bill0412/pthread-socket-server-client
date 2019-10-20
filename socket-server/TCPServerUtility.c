@@ -11,12 +11,21 @@
 #include <string.h>
 #include <stdio.h>
 #include <pthread.h>
+#include <math.h>
 
+int str2int(char* s, int len)
+{
+    int res = 0;
+
+    for(int i = 0; i < len; i++) {
+        res += ((s[i] - '0') * pow(10, len - 1 - i));
+    }
+
+    return res;
+}
 
 void HandleTCPClient(int clntSocket) {
     char buffer[BUFSIZE]; // Buffer for echo string
-    int isClosed = 0;
-
     // send "hello" back to the client before receiving
     char hello_msg[] = "Hello there, what can I do for you?";
     ssize_t numBytesSent = send(clntSocket, hello_msg, strlen(hello_msg), 0);
@@ -24,31 +33,93 @@ void HandleTCPClient(int clntSocket) {
         DieWithSystemMessage("send() failed");
 
     // Receive message from client
-    ssize_t numBytesRcvd = recv(clntSocket, buffer, BUFSIZE, 0);
-    if(numBytesRcvd < 0)
-        DieWithSystemMessage("recv() failed");
-    // printf("buffer after receiving: %s\n", buffer);
-
-
-
-    // if(!str)
-
-
-    char* inst = buffer;
-    for(int i = 0; i < strlen(buffer); i++) {
-        if(inst[i] < 'a' || inst[i] > 'z') {
-            inst[i] = '\0';
-            break;
+    int numBytesRcvd;
+    for( ; ; ) {
+        numBytesRcvd = recv(clntSocket, buffer, BUFSIZE, 0);
+        if(numBytesRcvd <= 0) {
+            continue;
         }
-    }
-    printf("Instruction received: %s\n", inst);
+        char* inst = buffer;
 
-    if(!strcmp(buffer, "close")) {
-        printf("Action: client %d closed\n\n", clntSocket);
-        fflush(stdout);
-        isClosed = 1;
-        close(clntSocket); // Close client socket
-        pthread_exit(0);
+        printf("Instruction received: %s\n", inst);
+
+        // "close"
+        if(*inst == 'c') {
+            printf("Action: client(%d) closed\n\n", clntSocket);
+            fflush(stdout);
+
+            close(clntSocket); // Close client socket
+            pthread_exit(0);
+        }
+
+        // "time": get time
+        if(*inst == 't') {
+            // to be modified to dynamic time
+            char t[] = "20191021";
+
+            numBytesSent = send(clntSocket, t, strlen(t), 0);
+            if(numBytesSent < 0)
+                DieWithSystemMessage("time send() failed");
+
+            printf("Action: sent current time [%s] to the client\n", t);
+        }
+
+        // "name": get machine name
+        if(*inst == 'n') {
+            // to be modified to dynamic time
+            char name[] = "macOS";
+
+            numBytesSent = send(clntSocket, name, strlen(name), 0);
+            if(numBytesSent < 0)
+                DieWithSystemMessage("time send() failed");
+
+            printf("Action: sent machine name [%s] to the client\n", name);
+        }
+
+        // "list": list all the clients
+        if(*inst == 'l') {
+            // to be modified to dynamic time
+            char list[] = "list";
+
+            numBytesSent = send(clntSocket, list, strlen(list), 0);
+            if(numBytesSent < 0)
+                DieWithSystemMessage("time send() failed");
+
+           printf("Action: sent client list to the client\n");
+        }
+
+        // send
+        // example: "send12hello,world"
+        if(*inst == 's') {
+            // get the client number
+            int i = 4 + 1;
+            for(; inst[i] <= '9' && inst[i] >= '0'; i++);
+
+            // last digit: i - 1
+            int client_id = str2int(inst + 4, i - 4);
+            printf("client_id: %d\n", client_id);
+
+            // get the content to send
+            char* content = inst + i;
+
+            // filter out the extra tail
+            for(char* c = content; ; c++) {
+                if(*c == '\\') {
+                    *c = '\0';
+                    break;
+                }
+            }
+
+            numBytesSent = send(clntSocket, content, strlen(content), 0);
+            if(numBytesSent < 0)
+                DieWithSystemMessage("time send() failed");
+
+            printf("Action: sent [%s] to the client(%d)\n", content, client_id);
+        }
+
+        // clear the instruction
+        printf("Cleared the Instruction, waiting for the next...\n\n");
+        inst[0] = '\0';
     }
 
 }
