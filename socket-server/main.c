@@ -55,7 +55,7 @@ int main() {
          ptrArgs->clientAddr = ptrClntAddr;
          ptrArgs->clntSock = clntSock;
          // create the thread
-         int ret = pthread_create(&tid, &attr, acceptor, (void *) ptrArgs);
+         pthread_create(&tid, &attr, acceptor, (void *) ptrArgs);
      }
 
     return 0;
