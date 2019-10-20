@@ -13,6 +13,7 @@ CMakeFiles/socket_server.dir/DieWithMessage.c.o: ../DieWithMessage.h
 CMakeFiles/socket_server.dir/DieWithMessage.c.o: ../Practical.h
 CMakeFiles/socket_server.dir/DieWithMessage.c.o: ../TCPServerUtility.h
 
+CMakeFiles/socket_server.dir/TCPServerUtility.c.o: ../DieWithMessage.h
 CMakeFiles/socket_server.dir/TCPServerUtility.c.o: ../TCPServerUtility.c
 CMakeFiles/socket_server.dir/TCPServerUtility.c.o: ../TCPServerUtility.h
 

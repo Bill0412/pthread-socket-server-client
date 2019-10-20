@@ -4,6 +4,11 @@
 
 #define BUFSIZE 1024
 #include "TCPServerUtility.h"
+#include <sys/socket.h>
+#include "DieWithMessage.h"
+#include <sys/types.h>
+#include <unistd.h>
+
 
 void HandleTCPClient(int clntSocket) {
     char buffer[BUFSIZE]; // Buffer for echo string
@@ -25,7 +30,7 @@ void HandleTCPClient(int clntSocket) {
         // See if there is more data to receive
         numBytesRcvd = recv(clntSocket, buffer, BUFSIZE, 0);
         if(numBytesSent < 0)
-            DieWithUserMessage("recv() failed");
+            DieWithSystemMessage("recv() failed");
     }
 
     close(clntSocket); // Close client socket
