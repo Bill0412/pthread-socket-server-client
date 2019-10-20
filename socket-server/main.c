@@ -5,15 +5,34 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <pthread.h>
 #include "Practical.h"
 
 static const int MAXPENDING = 5;
 
-int main(int argc, char* argv[]) {
-    if (argc != 2)          // Test for correct number of arguments
-        DieWithUserMessage("Parameter(s)", "<Server Port>");
+struct arg_struct {
+    struct sockaddr_in* clientAddr;
+    int clntSock;
+};
 
-    in_port_t servPort = atoi(argv[1]); // First arg: local port
+void* acceptor(void* ptrArgs) {
+    struct arg_struct* a;
+    a = (struct arg_struct *) ptrArgs;
+    struct sockaddr_in clntAddr = *a->clientAddr;
+
+    char clntName[INET_ADDRSTRLEN]; // String to contain client address
+    if (inet_ntop(AF_INET, &clntAddr.sin_addr.s_addr, clntName, sizeof(clntName)) != NULL)
+        printf("Handling client %s/%d\n", clntName, ntohs(clntAddr.sin_port));
+    else
+        puts("Unable to get client address");
+
+    HandleTCPClient(a->clntSock);
+    free(a->clientAddr);
+    free(a);
+}
+
+int main() {
+    in_port_t servPort = 2881; // local port: last four digits of Student ID
 
     // Create socket for incoming connections
     int servSock; // Socket descriptor for server
@@ -36,26 +55,29 @@ int main(int argc, char* argv[]) {
          DieWithSystemMessage("listen() failed");
 
      for (; ; ) {   // Run forever
-         struct sockaddr_in clntAddr; // Client address
+         pthread_t tid; // thread identifier
+         pthread_attr_t attr;   // set of thread attributs
+
+         struct sockaddr_in *ptrClntAddr = malloc(sizeof(struct sockaddr_in)); // Client address
          // Set length of client address structure(in-out parameter)
-         socklen_t clntAddrLen = sizeof(clntAddr);
+         socklen_t clntAddrLen = sizeof(*ptrClntAddr);
 
          // Wait for a client to connect
-         int clntSock = accept(servSock, (struct sockaddr *) &clntAddr, &clntAddrLen);
+         int clntSock = accept(servSock, (struct sockaddr *) ptrClntAddr, &clntAddrLen);
          if (clntSock < 0)
              DieWithSystemMessage("accept() failed");
 
-         // clntSock is connected to a client!
+         // When accept succeeds, create a child thread for it
+         // set the default attributes of the thread
+         pthread_attr_init(&attr);
 
-         char clntName[INET_ADDRSTRLEN]; // String to contain client address
-         if (inet_ntop(AF_INET, &clntAddr.sin_addr.s_addr, clntName, sizeof(clntName)) != NULL)
-             printf("Handling client %s/%d\n", clntName, ntohs(clntAddr.sin_port));
-         else
-             puts("Unable to get client address");
-
-         HandleTCPClient(clntSock);
+         // construct the args list
+         struct arg_struct *ptrArgs = malloc(sizeof(struct arg_struct));
+         ptrArgs->clientAddr = ptrClntAddr;
+         ptrArgs->clntSock = clntSock;
+         // create the thread
+         int ret = pthread_create(&tid, &attr, acceptor, (void *) ptrArgs);
      }
-
 
     return 0;
 }
