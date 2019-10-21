@@ -35,7 +35,7 @@ int main() {
 
      for (; ; ) {   // Run forever
          pthread_t tid; // thread identifier
-         pthread_attr_t attr;   // set of thread attributs
+         pthread_attr_t attr;   // set of thread attributes
 
          struct sockaddr_in *ptrClntAddr = malloc(sizeof(struct sockaddr_in)); // Client address
          // Set length of client address structure(in-out parameter)

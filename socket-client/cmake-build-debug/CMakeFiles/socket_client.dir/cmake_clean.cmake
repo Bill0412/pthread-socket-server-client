@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/socket_client.dir/main.c.o"
   "CMakeFiles/socket_client.dir/DieWithMessage.c.o"
+  "CMakeFiles/socket_client.dir/UserInterface.c.o"
+  "CMakeFiles/socket_client.dir/HandleConnect.c.o"
+  "CMakeFiles/socket_client.dir/MsgListener.c.o"
   "socket_client.pdb"
   "socket_client"
 )

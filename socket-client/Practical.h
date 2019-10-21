@@ -6,6 +6,6 @@
 #define SOCKET_SERVER_PRACTICAL_H
 
 #include "DieWithMessage.h"
-
+#include "UserInterface.h"
 
 #endif //SOCKET_SERVER_PRACTICAL_H

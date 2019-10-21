@@ -29,6 +29,9 @@ void HandleTCPClient(int clntSocket) {
     // send "hello" back to the client before receiving
     char hello_msg[] = "Hello there, what can I do for you?";
     ssize_t numBytesSent = send(clntSocket, hello_msg, strlen(hello_msg), 0);
+    printf("Message sent");
+    fflush(stdout);
+
     if(numBytesSent < 0)
         DieWithSystemMessage("send() failed");
 

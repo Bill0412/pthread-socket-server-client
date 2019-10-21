@@ -83,19 +83,64 @@ CMakeFiles/socket_client.dir/DieWithMessage.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/socket_client.dir/DieWithMessage.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/DieWithMessage.c" -o CMakeFiles/socket_client.dir/DieWithMessage.c.s
 
+CMakeFiles/socket_client.dir/UserInterface.c.o: CMakeFiles/socket_client.dir/flags.make
+CMakeFiles/socket_client.dir/UserInterface.c.o: ../UserInterface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/socket_client.dir/UserInterface.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/socket_client.dir/UserInterface.c.o   -c "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.c"
+
+CMakeFiles/socket_client.dir/UserInterface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/socket_client.dir/UserInterface.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.c" > CMakeFiles/socket_client.dir/UserInterface.c.i
+
+CMakeFiles/socket_client.dir/UserInterface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/socket_client.dir/UserInterface.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.c" -o CMakeFiles/socket_client.dir/UserInterface.c.s
+
+CMakeFiles/socket_client.dir/HandleConnect.c.o: CMakeFiles/socket_client.dir/flags.make
+CMakeFiles/socket_client.dir/HandleConnect.c.o: ../HandleConnect.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/socket_client.dir/HandleConnect.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/socket_client.dir/HandleConnect.c.o   -c "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.c"
+
+CMakeFiles/socket_client.dir/HandleConnect.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/socket_client.dir/HandleConnect.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.c" > CMakeFiles/socket_client.dir/HandleConnect.c.i
+
+CMakeFiles/socket_client.dir/HandleConnect.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/socket_client.dir/HandleConnect.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.c" -o CMakeFiles/socket_client.dir/HandleConnect.c.s
+
+CMakeFiles/socket_client.dir/MsgListener.c.o: CMakeFiles/socket_client.dir/flags.make
+CMakeFiles/socket_client.dir/MsgListener.c.o: ../MsgListener.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/socket_client.dir/MsgListener.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/socket_client.dir/MsgListener.c.o   -c "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.c"
+
+CMakeFiles/socket_client.dir/MsgListener.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/socket_client.dir/MsgListener.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.c" > CMakeFiles/socket_client.dir/MsgListener.c.i
+
+CMakeFiles/socket_client.dir/MsgListener.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/socket_client.dir/MsgListener.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.c" -o CMakeFiles/socket_client.dir/MsgListener.c.s
+
 # Object files for target socket_client
 socket_client_OBJECTS = \
 "CMakeFiles/socket_client.dir/main.c.o" \
-"CMakeFiles/socket_client.dir/DieWithMessage.c.o"
+"CMakeFiles/socket_client.dir/DieWithMessage.c.o" \
+"CMakeFiles/socket_client.dir/UserInterface.c.o" \
+"CMakeFiles/socket_client.dir/HandleConnect.c.o" \
+"CMakeFiles/socket_client.dir/MsgListener.c.o"
 
 # External object files for target socket_client
 socket_client_EXTERNAL_OBJECTS =
 
 socket_client: CMakeFiles/socket_client.dir/main.c.o
 socket_client: CMakeFiles/socket_client.dir/DieWithMessage.c.o
+socket_client: CMakeFiles/socket_client.dir/UserInterface.c.o
+socket_client: CMakeFiles/socket_client.dir/HandleConnect.c.o
+socket_client: CMakeFiles/socket_client.dir/MsgListener.c.o
 socket_client: CMakeFiles/socket_client.dir/build.make
 socket_client: CMakeFiles/socket_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable socket_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable socket_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/socket_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

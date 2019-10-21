@@ -150,6 +150,87 @@ DieWithMessage.c.s:
 	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/DieWithMessage.c.s
 .PHONY : DieWithMessage.c.s
 
+HandleConnect.o: HandleConnect.c.o
+
+.PHONY : HandleConnect.o
+
+# target to build an object file
+HandleConnect.c.o:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/HandleConnect.c.o
+.PHONY : HandleConnect.c.o
+
+HandleConnect.i: HandleConnect.c.i
+
+.PHONY : HandleConnect.i
+
+# target to preprocess a source file
+HandleConnect.c.i:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/HandleConnect.c.i
+.PHONY : HandleConnect.c.i
+
+HandleConnect.s: HandleConnect.c.s
+
+.PHONY : HandleConnect.s
+
+# target to generate assembly for a file
+HandleConnect.c.s:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/HandleConnect.c.s
+.PHONY : HandleConnect.c.s
+
+MsgListener.o: MsgListener.c.o
+
+.PHONY : MsgListener.o
+
+# target to build an object file
+MsgListener.c.o:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/MsgListener.c.o
+.PHONY : MsgListener.c.o
+
+MsgListener.i: MsgListener.c.i
+
+.PHONY : MsgListener.i
+
+# target to preprocess a source file
+MsgListener.c.i:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/MsgListener.c.i
+.PHONY : MsgListener.c.i
+
+MsgListener.s: MsgListener.c.s
+
+.PHONY : MsgListener.s
+
+# target to generate assembly for a file
+MsgListener.c.s:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/MsgListener.c.s
+.PHONY : MsgListener.c.s
+
+UserInterface.o: UserInterface.c.o
+
+.PHONY : UserInterface.o
+
+# target to build an object file
+UserInterface.c.o:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/UserInterface.c.o
+.PHONY : UserInterface.c.o
+
+UserInterface.i: UserInterface.c.i
+
+.PHONY : UserInterface.i
+
+# target to preprocess a source file
+UserInterface.c.i:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/UserInterface.c.i
+.PHONY : UserInterface.c.i
+
+UserInterface.s: UserInterface.c.s
+
+.PHONY : UserInterface.s
+
+# target to generate assembly for a file
+UserInterface.c.s:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/UserInterface.c.s
+.PHONY : UserInterface.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -189,6 +270,15 @@ help:
 	@echo "... DieWithMessage.o"
 	@echo "... DieWithMessage.i"
 	@echo "... DieWithMessage.s"
+	@echo "... HandleConnect.o"
+	@echo "... HandleConnect.i"
+	@echo "... HandleConnect.s"
+	@echo "... MsgListener.o"
+	@echo "... MsgListener.i"
+	@echo "... MsgListener.s"
+	@echo "... UserInterface.o"
+	@echo "... UserInterface.i"
+	@echo "... UserInterface.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -84,7 +84,28 @@
 		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/DieWithMessage.h">
 			<Option target="socket_client"/>
 		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/Globals.h">
+			<Option target="socket_client"/>
+		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.c">
+			<Option target="socket_client"/>
+		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.h">
+			<Option target="socket_client"/>
+		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.c">
+			<Option target="socket_client"/>
+		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.h">
+			<Option target="socket_client"/>
+		</Unit>
 		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/Practical.h">
+			<Option target="socket_client"/>
+		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.c">
+			<Option target="socket_client"/>
+		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.h">
 			<Option target="socket_client"/>
 		</Unit>
 		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-client/main.c">

@@ -7,9 +7,27 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include "Practical.h"
+#include "Globals.h"
 
 #define BUFSIZE 1024
-int main(int argc, char* argv[]) {
+
+int stage;
+int stall;
+
+int main() {
+    stage = DISCONNECTED;
+    stall = FALSE;
+
+    for(; ; ) {
+        if(!stall) {
+            display();
+            response();
+        }
+    }
+    return 0;
+}
+#if 0
+void client() {
 
     if (argc < 3 || argc > 4)   // Test for correct number of arguments
         DieWithUserMessage("Parameter(s)",
@@ -53,20 +71,20 @@ int main(int argc, char* argv[]) {
         DieWithUserMessage("send()", "sent unexpected number of bytes");
 
     // Receive the same string back from the server
-    unsigned int totalBytesRcvd = 0;    // Count of total bytes received
-    fputs("Received: ", stdout);        // Setup to print the echoed string
-    while(totalBytesRcvd < echoStringLen) {
-        char buffer[BUFSIZE];   // I/O buffer
-        /* Receive up to the buffer size(minus 1 to leave space for a null terminator) bytes from the sender */
-        numBytes = recv(sock, buffer, BUFSIZE - 1, 0);
-        if(numBytes < 0)
-            DieWithSystemMessage("recv() failed");
-        else if (numBytes == 0)
-            DieWithUserMessage("recv()", "connection closed prematurely");
-        totalBytesRcvd += numBytes; // keep tally of total bytes
-        buffer[numBytes] = '\0';    // Terminate the string!
-        fputs(buffer, stdout);      // Print the echo buffer
-    }
+//    unsigned int totalBytesRcvd = 0;    // Count of total bytes received
+//    fputs("Received: ", stdout);        // Setup to print the echoed string
+//    while(totalBytesRcvd < echoStringLen) {
+//        char buffer[BUFSIZE];   // I/O buffer
+//        /* Receive up to the buffer size(minus 1 to leave space for a null terminator) bytes from the sender */
+//        numBytes = recv(sock, buffer, BUFSIZE - 1, 0);
+//        if(numBytes < 0)
+//            DieWithSystemMessage("recv() failed");
+//        else if (numBytes == 0)
+//            DieWithUserMessage("recv()", "connection closed prematurely");
+//        totalBytesRcvd += numBytes; // keep tally of total bytes
+//        buffer[numBytes] = '\0';    // Terminate the string!
+//        fputs(buffer, stdout);      // Print the echo buffer
+//    }
     fputc('\n', stdout);    // Print a final linefeed
 
     close(sock);
@@ -74,3 +92,4 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+#endif
