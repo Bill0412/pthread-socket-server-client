@@ -15,6 +15,13 @@ int stall;
 int sock;
 #define BUFSIZE 1024
 
+void PressKeyToContinue()
+{
+    printf("(PRESS ANY ENTER TO CONTINUE) ");
+    fflush(stdout);
+    while(getchar() != 13);
+}
+
 void*  msgListener(void* arg)
 {
     char* buffer[BUFSIZE];
@@ -36,7 +43,7 @@ void*  msgListener(void* arg)
             if(numBytesRcvd <= 0)
                 continue;
 
-            printf("Message received from socket server %d: [%s]\n", sock, buffer);
+            // printf("Message received from socket server %d: [%s]\n", sock, buffer);
             // printf("System Message: Enter to continue");
 
             for(char* c = buffer; ; c++) {
@@ -50,13 +57,21 @@ void*  msgListener(void* arg)
 
             // printf("before enter buffer == 't'\n");
             // printf("buffer: [%s]\n", buffer);
-            fflush(stdout);
+            // fflush(stdout);
 
             // issue solved by adding this
             char* inst = buffer; // why this works ????
+            int instLen = 6;
             if(*(inst + 1) == 't') {
 
-                printf("Server time: %s\n", inst + 6);
+                printf("Server time: %s\n", inst + instLen);
+                fflush(stdout);
+                // ressKeyToContinue();
+                stall = FALSE;
+            }
+
+            if(*(inst + 1) == 'n') {
+                printf("Server name: %s\n", inst + instLen);
                 fflush(stdout);
                 stall = FALSE;
             }

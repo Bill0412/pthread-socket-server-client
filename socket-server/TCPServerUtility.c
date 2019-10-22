@@ -79,9 +79,15 @@ void HandleTCPClient(int clntSocket) {
         // "name": get machine name
         if(*inst == 'n') {
             // to be modified to dynamic time
-            char name[] = "macOS";
+            const int name_limit = 128;
+            char name[name_limit];
 
-            numBytesSent = send(clntSocket, name, strlen(name), 0);
+            gethostname(&name, name_limit);
+
+            char res[256];
+            sprintf(res, "{name:%s}", name);
+
+            numBytesSent = send(clntSocket, res, strlen(res), 0);
             if(numBytesSent < 0)
                 DieWithSystemMessage("time send() failed");
 
