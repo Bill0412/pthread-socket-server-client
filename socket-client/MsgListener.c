@@ -10,17 +10,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Globals.h"
+#include <pthread.h>
 int stall;
-
+int sock;
 #define BUFSIZE 1024
 
 void*  msgListener(void* arg)
 {
     char* buffer[BUFSIZE];
-
-    struct arg_struct* a = arg;
-    int sock = a->sock;
-    free(a);
 
     // receive the server hello message
     ssize_t numBytesRcvd = recv(sock, buffer, BUFSIZE, 0);
@@ -33,13 +30,41 @@ void*  msgListener(void* arg)
     stall = FALSE;
 
     for( ; ; ) {
-        numBytesRcvd = recv(sock, buffer, BUFSIZE, 0);
+        if(sock != -1) {
+            numBytesRcvd = recv(sock, buffer, BUFSIZE, 0);
 
-        if(numBytesRcvd <= 0)
-            continue;
+            if(numBytesRcvd <= 0)
+                continue;
 
-        printf("Message received from socket server %d: %s\n", sock, buffer);
-        printf("System Message: Enter to continue");
-        fflush(stdout);
+            printf("Message received from socket server %d: [%s]\n", sock, buffer);
+            // printf("System Message: Enter to continue");
+
+            for(char* c = buffer; ; c++) {
+                if(*c == '}') {
+                    *c = '\0';
+                    break;
+                }
+            }
+
+            // issue is here solved
+
+            // printf("before enter buffer == 't'\n");
+            // printf("buffer: [%s]\n", buffer);
+            fflush(stdout);
+
+            // issue solved by adding this
+            char* inst = buffer; // why this works ????
+            if(*(inst + 1) == 't') {
+
+                printf("Server time: %s\n", inst + 6);
+                fflush(stdout);
+                stall = FALSE;
+            }
+        } else {
+            printf("Exiting the remaining socket thread...\n");
+            fflush(stdout);
+            stall = FALSE;
+            pthread_exit(0);
+        }
     }
 }

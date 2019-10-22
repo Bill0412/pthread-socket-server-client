@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <math.h>
+#include <time.h>
+#include <unistd.h>
 
 int str2int(char* s, int len)
 {
@@ -29,7 +31,7 @@ void HandleTCPClient(int clntSocket) {
     // send "hello" back to the client before receiving
     char hello_msg[] = "Hello there, what can I do for you?";
     ssize_t numBytesSent = send(clntSocket, hello_msg, strlen(hello_msg), 0);
-    printf("Message sent");
+    printf("Hello Message sent\n");
     fflush(stdout);
 
     if(numBytesSent < 0)
@@ -58,13 +60,20 @@ void HandleTCPClient(int clntSocket) {
         // "time": get time
         if(*inst == 't') {
             // to be modified to dynamic time
-            char t[] = "20191021";
+            time_t t = time(NULL);
+            struct tm *tm = localtime(&t);
+            char s[512];
+            strftime(s, sizeof(s), "%c", tm);
 
-            numBytesSent = send(clntSocket, t, strlen(t), 0);
+            char res[512];
+            sprintf(res, "{time:%s}", s);
+
+            numBytesSent = send(clntSocket, res, strlen(res), 0);
             if(numBytesSent < 0)
                 DieWithSystemMessage("time send() failed");
+            printf("bytes sent: %d\n", numBytesSent);
 
-            printf("Action: sent current time [%s] to the client\n", t);
+            printf("Action: sent current time [%s] to the client\n", res);
         }
 
         // "name": get machine name

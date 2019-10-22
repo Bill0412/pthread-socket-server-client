@@ -13,6 +13,11 @@
 #include <pthread.h>
 #include "MsgListener.h"
 #include "Globals.h"
+int sock;
+
+pthread_t tid;  // thread identifier
+pthread_attr_t attr;    // set of thtread attributes
+
 
 void handleConnect()
 {
@@ -27,7 +32,7 @@ void handleConnect()
     scanf("%hd", &servPort);
 
 
-    int sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 
 
     // Construct the server address structure
@@ -50,17 +55,11 @@ void handleConnect()
     stage = CONNECTED;
 
     // pthread client listener
-    pthread_t tid;  // thread identifier
-    pthread_attr_t attr;    // set of thtread attributes
-
     // set the default attributes of the thread
     pthread_attr_init(&attr);
 
-    struct arg_struct *arg = malloc(sizeof(struct arg_struct));
-    arg->sock = sock;
-
     // printf("\nsock outside pthread: %d\n", sock);
-    pthread_create(&tid, &attr, msgListener, arg);
+    pthread_create(&tid, &attr, msgListener, 0);
     stall = TRUE;
     // printf("thread created");
 }

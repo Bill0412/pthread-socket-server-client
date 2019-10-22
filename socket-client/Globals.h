@@ -4,6 +4,8 @@
 
 #ifndef SOCKET_CLIENT_GLOBALS_H
 #define SOCKET_CLIENT_GLOBALS_H
+#include <pthread.h>
+
 #define DISCONNECTED 0
 #define CONNECTED 1
 #define TRUE 1
@@ -11,6 +13,14 @@
 
 extern int stage;
 extern int stall;
+extern int quit;
+extern int sock;
+
+
+// pthread client listener
+extern pthread_t tid;  // thread identifier
+extern pthread_attr_t attr;    // set of thtread attributes
+
 #if 0
 int connected()
 {

@@ -7,6 +7,9 @@
 #include <stdio.h>
 #include "HandleConnect.h"
 #include "Globals.h"
+#include <sys/socket.h>
+#include <unistd.h>
+#include <string.h>
 
 /* Declarations */
 int stage;
@@ -28,7 +31,7 @@ void handleGetMachineName();
 void handleListClients();
 void handleSendToClient();
 
-void display()
+void  display()
 {
     switch(stage) {
         case DISCONNECTED: displayDisconnected(); break;
@@ -68,7 +71,7 @@ void responseDisconnected()
 {
     switch(getchar()) {
         case 'c': handleConnect(); break;
-        case 'q': handleQuit(DISCONNECTED); break;  // quit when disconnected
+        case 'q': handleQuit(); break;  // quit when disconnected
         default: displayDisconnected();
     }
 }
@@ -76,13 +79,13 @@ void responseDisconnected()
 void responseConnected()
 {
     switch(getchar()) {
-        case 'c': handleConnect(); break;
+        case 'c': handleClose();handleConnect(); break;
         case 'x': handleClose(); break;
         case 't': handleGetTime(); break;
         case 'n': handleGetMachineName(); break;
         case 'l': handleListClients(); break;
         case 's': handleSendToClient(); break;
-        case 'q': handleQuit(); break;  // quit when connected
+        case 'q': handleClose(); handleQuit(); break;  // quit when connected
     }
 }
 
@@ -98,23 +101,36 @@ void response()
 
 void handleQuit()
 {
-
+    printf("Processing Quit Request... \n");
+    quit = TRUE;
 }
 
 void handleClose()
 {
-
+    close(sock);
+    printf("Closed the socket connection.\n");
+    sock = -1;
+    stage = DISCONNECTED;
+    stall = TRUE;
 }
 
 void handleGetTime()
 {
-
+    char inst[] = "time";
+    int numBytesSent = send(sock, inst, strlen(inst), 0);
+    if(numBytesSent < 0)
+        DieWithSystemMessage("send() failed.");
+    stall = TRUE;
 }
 
 
 void handleGetMachineName()
 {
-
+    char inst[] = "name";
+    int numBytesSent = send(sock, inst, strlen(inst), 0);
+    if(numBytesSent < 0)
+        DieWithSystemMessage("send() failed.");
+    stall = TRUE;
 }
 
 void handleListClients()

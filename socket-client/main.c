@@ -13,17 +13,26 @@
 
 int stage;
 int stall;
+int quit;
 
 int main() {
     stage = DISCONNECTED;
     stall = FALSE;
+    quit = FALSE;
+    sock = -1; // when not connected, sock = -1
 
     for(; ; ) {
         if(!stall) {
             display();
             response();
+
+            if(quit) {
+                break;
+            }
         }
     }
+
+    printf("\nThe program successfully closed.\n");
     return 0;
 }
 #if 0
