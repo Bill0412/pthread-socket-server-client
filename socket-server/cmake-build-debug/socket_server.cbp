@@ -84,6 +84,12 @@
 		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-server/Acceptor.h">
 			<Option target="socket_server"/>
 		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-server/ClientList.c">
+			<Option target="socket_server"/>
+		</Unit>
+		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-server/ClientList.h">
+			<Option target="socket_server"/>
+		</Unit>
 		<Unit filename="/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall &amp; Winter/Computer Networks/Lab/Lab3/socket/socket-server/DieWithMessage.c">
 			<Option target="socket_server"/>
 		</Unit>

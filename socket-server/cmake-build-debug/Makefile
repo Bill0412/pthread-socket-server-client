@@ -150,6 +150,33 @@ Acceptor.c.s:
 	$(MAKE) -f CMakeFiles/socket_server.dir/build.make CMakeFiles/socket_server.dir/Acceptor.c.s
 .PHONY : Acceptor.c.s
 
+ClientList.o: ClientList.c.o
+
+.PHONY : ClientList.o
+
+# target to build an object file
+ClientList.c.o:
+	$(MAKE) -f CMakeFiles/socket_server.dir/build.make CMakeFiles/socket_server.dir/ClientList.c.o
+.PHONY : ClientList.c.o
+
+ClientList.i: ClientList.c.i
+
+.PHONY : ClientList.i
+
+# target to preprocess a source file
+ClientList.c.i:
+	$(MAKE) -f CMakeFiles/socket_server.dir/build.make CMakeFiles/socket_server.dir/ClientList.c.i
+.PHONY : ClientList.c.i
+
+ClientList.s: ClientList.c.s
+
+.PHONY : ClientList.s
+
+# target to generate assembly for a file
+ClientList.c.s:
+	$(MAKE) -f CMakeFiles/socket_server.dir/build.make CMakeFiles/socket_server.dir/ClientList.c.s
+.PHONY : ClientList.c.s
+
 DieWithMessage.o: DieWithMessage.c.o
 
 .PHONY : DieWithMessage.o
@@ -243,6 +270,9 @@ help:
 	@echo "... Acceptor.o"
 	@echo "... Acceptor.i"
 	@echo "... Acceptor.s"
+	@echo "... ClientList.o"
+	@echo "... ClientList.i"
+	@echo "... ClientList.s"
 	@echo "... DieWithMessage.o"
 	@echo "... DieWithMessage.i"
 	@echo "... DieWithMessage.s"

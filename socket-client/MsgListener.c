@@ -15,11 +15,12 @@ int stall;
 int sock;
 #define BUFSIZE 1024
 
-void PressKeyToContinue()
+void PressAnyKeyToContinue()
 {
-    printf("(PRESS ANY ENTER TO CONTINUE) ");
+    printf("(PRESS ANY KEY TO CONTINUE) ");
     fflush(stdout);
-    while(getchar() != 13);
+    getchar();
+    fflush(stdin);
 }
 
 void*  msgListener(void* arg)
@@ -46,7 +47,11 @@ void*  msgListener(void* arg)
             // printf("Message received from socket server %d: [%s]\n", sock, buffer);
             // printf("System Message: Enter to continue");
 
-            for(char* c = buffer; ; c++) {
+            // issue solved by adding this
+            char* inst = buffer; // why this works ????
+            int instLen = 6;
+
+            for(char* c = buffer; *(inst + 1) != 'l'; c++) {
                 if(*c == '}') {
                     *c = '\0';
                     break;
@@ -59,22 +64,30 @@ void*  msgListener(void* arg)
             // printf("buffer: [%s]\n", buffer);
             // fflush(stdout);
 
-            // issue solved by adding this
-            char* inst = buffer; // why this works ????
-            int instLen = 6;
+
             if(*(inst + 1) == 't') {
 
                 printf("Server time: %s\n", inst + instLen);
                 fflush(stdout);
-                // ressKeyToContinue();
+                PressAnyKeyToContinue();
                 stall = FALSE;
             }
 
             if(*(inst + 1) == 'n') {
                 printf("Server name: %s\n", inst + instLen);
                 fflush(stdout);
+                PressAnyKeyToContinue();
                 stall = FALSE;
             }
+
+            if(*(inst + 1) == 'l') {
+                printf("Server client list: %s\n", inst + instLen);
+                fflush(stdout);
+                PressAnyKeyToContinue();
+                stall = FALSE;
+            }
+
+
         } else {
             printf("Exiting the remaining socket thread...\n");
             fflush(stdout);

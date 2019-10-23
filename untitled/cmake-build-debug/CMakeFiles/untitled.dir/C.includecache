@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/untitled/main.c
+pthread.h
+-
+stdio.h
+-
+zconf.h
+-
+sys/wait.h
+-
+

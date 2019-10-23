@@ -7,11 +7,15 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #include "Practical.h"
+#include "ClientList.h"
 
 static const int MAXPENDING = 5;
 
 int main() {
     in_port_t servPort = 2881; // local port: last four digits of Student ID
+
+    // init clientList
+    InitClientList();
 
     // Create socket for incoming connections
     int servSock; // Socket descriptor for server

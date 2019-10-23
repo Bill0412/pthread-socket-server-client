@@ -14,6 +14,8 @@
 #include <math.h>
 #include <time.h>
 #include <unistd.h>
+#include "ClientList.h"
+#include <stdlib.h>
 
 int str2int(char* s, int len)
 {
@@ -46,14 +48,16 @@ void HandleTCPClient(int clntSocket) {
         }
         char* inst = buffer;
 
+        // todo: 1. sovle the issue here. Exit code 11.
         printf("Instruction received: %s\n", inst);
 
         // "close"
         if(*inst == 'c') {
-            printf("Action: client(%d) closed\n\n", clntSocket);
+            printf(" Action: client(%d) closed\n\n", clntSocket);
             fflush(stdout);
 
             close(clntSocket); // Close client socket
+            RemoveNodeFromList(clntSocket);
             pthread_exit(0);
         }
 
@@ -97,12 +101,13 @@ void HandleTCPClient(int clntSocket) {
         // "list": list all the clients
         if(*inst == 'l') {
             // to be modified to dynamic time
-            char list[] = "list";
+            char* list = FormatClientList();
 
             numBytesSent = send(clntSocket, list, strlen(list), 0);
             if(numBytesSent < 0)
                 DieWithSystemMessage("time send() failed");
 
+            free(list);
            printf("Action: sent client list to the client\n");
         }
 

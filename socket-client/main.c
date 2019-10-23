@@ -11,6 +11,7 @@
 
 #define BUFSIZE 1024
 
+// TODO: 1. fix 2-time prompt
 int stage;
 int stall;
 int quit;

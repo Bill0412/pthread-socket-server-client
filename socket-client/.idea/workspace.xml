@@ -12,16 +12,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79d58681-5ef0-4669-b5b9-6b24765d9eaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../socket-server/ClientList.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socket-server/ClientList.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/ClientList.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MsgListener.c" beforeDir="false" afterPath="$PROJECT_DIR$/MsgListener.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInterface.c" beforeDir="false" afterPath="$PROJECT_DIR$/UserInterface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/MsgListener.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/MsgListener.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/UserInterface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/UserInterface.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/socket_client" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/socket_client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/Acceptor.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/Acceptor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-server/TCPServerUtility.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/TCPServerUtility.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/Acceptor.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/Acceptor.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/TCPServerUtility.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/TCPServerUtility.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/socket_server" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/socket_server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/socket_server.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/socket_server.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-server/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="19">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -48,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserInterface.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="132" column="17" lean-forward="true" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
+            <state relative-caret-position="2679">
+              <caret line="141" column="17" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
               <folding>
                 <element signature="e#46#72#0" expanded="true" />
               </folding>
@@ -60,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HandleConnect.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="e#46#72#0" expanded="true" />
               </folding>
@@ -72,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MsgListener.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            <state relative-caret-position="666">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#46#70#0" expanded="true" />
               </folding>
@@ -105,11 +125,10 @@
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="721" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="720" />
-    <option name="height" value="877" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -175,12 +194,14 @@
       <option name="presentableId" value="Default" />
       <updated>1571578432077</updated>
       <workItem from="1571578433315" duration="15908000" />
-      <workItem from="1571675488901" duration="19021000" />
+      <workItem from="1571675488901" duration="22749000" />
+      <workItem from="1571767905953" duration="2402000" />
+      <workItem from="1571808691988" duration="703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34929000" />
+    <option name="totallyTimeSpent" value="41762000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,22 +213,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="721" y="23" width="720" height="877" extended-state="0" />
+    <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15665236" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15634218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29299363" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26037735" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3253886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32953367" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.4089172" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22802548" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.40679246" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.38471338" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32953367" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32953367" />
@@ -246,14 +267,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>26</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/HandleConnect.c</url>
-          <line>30</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/MsgListener.c</url>
+          <line>19</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -336,18 +352,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="19">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserInterface.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="132" column="17" lean-forward="true" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
+        <state relative-caret-position="2679">
+          <caret line="141" column="17" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
           <folding>
             <element signature="e#46#72#0" expanded="true" />
           </folding>
@@ -356,8 +369,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HandleConnect.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="266">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
             <element signature="e#46#72#0" expanded="true" />
           </folding>
@@ -366,8 +379,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MsgListener.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        <state relative-caret-position="666">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#46#70#0" expanded="true" />
           </folding>

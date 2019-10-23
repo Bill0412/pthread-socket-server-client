@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/socket_server.dir/DieWithMessage.c.o"
   "CMakeFiles/socket_server.dir/TCPServerUtility.c.o"
   "CMakeFiles/socket_server.dir/Acceptor.c.o"
+  "CMakeFiles/socket_server.dir/ClientList.c.o"
   "socket_server.pdb"
   "socket_server"
 )

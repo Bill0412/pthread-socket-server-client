@@ -3,9 +3,13 @@
 
 CMakeFiles/socket_server.dir/Acceptor.c.o: ../Acceptor.c
 CMakeFiles/socket_server.dir/Acceptor.c.o: ../Acceptor.h
+CMakeFiles/socket_server.dir/Acceptor.c.o: ../ClientList.h
 CMakeFiles/socket_server.dir/Acceptor.c.o: ../DieWithMessage.h
 CMakeFiles/socket_server.dir/Acceptor.c.o: ../Practical.h
 CMakeFiles/socket_server.dir/Acceptor.c.o: ../TCPServerUtility.h
+
+CMakeFiles/socket_server.dir/ClientList.c.o: ../ClientList.c
+CMakeFiles/socket_server.dir/ClientList.c.o: ../ClientList.h
 
 CMakeFiles/socket_server.dir/DieWithMessage.c.o: ../Acceptor.h
 CMakeFiles/socket_server.dir/DieWithMessage.c.o: ../DieWithMessage.c
@@ -13,11 +17,13 @@ CMakeFiles/socket_server.dir/DieWithMessage.c.o: ../DieWithMessage.h
 CMakeFiles/socket_server.dir/DieWithMessage.c.o: ../Practical.h
 CMakeFiles/socket_server.dir/DieWithMessage.c.o: ../TCPServerUtility.h
 
+CMakeFiles/socket_server.dir/TCPServerUtility.c.o: ../ClientList.h
 CMakeFiles/socket_server.dir/TCPServerUtility.c.o: ../DieWithMessage.h
 CMakeFiles/socket_server.dir/TCPServerUtility.c.o: ../TCPServerUtility.c
 CMakeFiles/socket_server.dir/TCPServerUtility.c.o: ../TCPServerUtility.h
 
 CMakeFiles/socket_server.dir/main.c.o: ../Acceptor.h
+CMakeFiles/socket_server.dir/main.c.o: ../ClientList.h
 CMakeFiles/socket_server.dir/main.c.o: ../DieWithMessage.h
 CMakeFiles/socket_server.dir/main.c.o: ../Practical.h
 CMakeFiles/socket_server.dir/main.c.o: ../TCPServerUtility.h
