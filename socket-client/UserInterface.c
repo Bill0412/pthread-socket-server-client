@@ -144,5 +144,24 @@ void handleListClients()
 
 void handleSendToClient()
 {
+    int clntSock;
+    char msg[512];
 
+    // printf("Follwing is the client list:\n");
+    // handleListClients();
+
+    // this part should be in the thread
+    printf("Please choose the client to send: ");
+    // todo: check if in the list, so analyze the list beforehand, client -server mapping
+    scanf("%d", &clntSock);
+
+    printf("Please enter the message to send: (no space)");
+    scanf("%s", msg);
+
+    char inst[1024];
+    sprintf(inst, "send:%d:%s", clntSock, msg);
+    int numBytesSent = send(sock, inst, strlen(inst), 0);
+    if(numBytesSent < 0)
+        DieWithSystemMessage("send() failed.");
+    stall = TRUE;
 }

@@ -44,44 +44,50 @@ void*  msgListener(void* arg)
             if(numBytesRcvd <= 0)
                 continue;
 
-            // printf("Message received from socket server %d: [%s]\n", sock, buffer);
+            printf("Message received from socket server %d: [%s]\n", sock, buffer);
+            fflush(stdout);
             // printf("System Message: Enter to continue");
 
             // issue solved by adding this
             char* inst = buffer; // why this works ????
             int instLen = 6;
+            char* instruction[5];
+            memcpy(instruction, inst + 1, 4);
+            instruction[5] = '\0';
+            printf("Instruction: %s", instruction);
 
-            for(char* c = buffer; *(inst + 1) != 'l'; c++) {
-                if(*c == '}') {
-                    *c = '\0';
-                    break;
+            int isTime = !strcmp(instruction, "time");
+            int isName = !strcmp(instruction, "name");
+            int isList = !strcmp(instruction, "list");
+            if( isTime || isName) {
+                for(char* c = buffer;; c++) {
+                    if(*c == '}') {
+                        *c = '\0';
+                        break;
+                    }
                 }
-            }
+                if(isTime) {
 
-            // issue is here solved
+                    printf("Server time: %s\n", inst + instLen);
+                    fflush(stdout);
+                    PressAnyKeyToContinue();
+                    stall = FALSE;
+                }
 
-            // printf("before enter buffer == 't'\n");
-            // printf("buffer: [%s]\n", buffer);
-            // fflush(stdout);
-
-
-            if(*(inst + 1) == 't') {
-
-                printf("Server time: %s\n", inst + instLen);
-                fflush(stdout);
-                PressAnyKeyToContinue();
-                stall = FALSE;
-            }
-
-            if(*(inst + 1) == 'n') {
-                printf("Server name: %s\n", inst + instLen);
-                fflush(stdout);
-                PressAnyKeyToContinue();
-                stall = FALSE;
-            }
-
-            if(*(inst + 1) == 'l') {
+                if(isName) {
+                    printf("Server name: %s\n", inst + instLen);
+                    fflush(stdout);
+                    PressAnyKeyToContinue();
+                    stall = FALSE;
+                }
+            } else if (isList){
                 printf("Server client list: %s\n", inst + instLen);
+                fflush(stdout);
+                PressAnyKeyToContinue();
+                stall = FALSE;
+            } else {
+                // other input
+                printf("Server instruction: %s", inst);
                 fflush(stdout);
                 PressAnyKeyToContinue();
                 stall = FALSE;

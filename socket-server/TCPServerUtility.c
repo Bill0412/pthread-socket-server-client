@@ -48,7 +48,6 @@ void HandleTCPClient(int clntSocket) {
         }
         char* inst = buffer;
 
-        // todo: 1. sovle the issue here. Exit code 11.
         printf("Instruction received: %s\n", inst);
 
         // "close"
@@ -116,24 +115,24 @@ void HandleTCPClient(int clntSocket) {
         if(*inst == 's') {
             // get the client number
             int i = 4 + 1;
-            for(; inst[i] <= '9' && inst[i] >= '0'; i++);
+            for(; inst[i] != ':'; i++);
 
             // last digit: i - 1
-            int client_id = str2int(inst + 4, i - 4);
+            int client_id = str2int(inst + 5, i - 5);
             printf("client_id: %d\n", client_id);
 
             // get the content to send
-            char* content = inst + i;
+            char* content = inst + i + 1;
 
-            // filter out the extra tail
-            for(char* c = content; ; c++) {
-                if(*c == '\\') {
-                    *c = '\0';
-                    break;
-                }
-            }
+//            // filter out the extra tail
+//            for(char* c = content; ; c++) {
+//                if(*c == '\\') {
+//                    *c = '\0';
+//                    break;
+//                }
+//            }
 
-            numBytesSent = send(clntSocket, content, strlen(content), 0);
+            numBytesSent = send(client_id, content, strlen(content), 0);
             if(numBytesSent < 0)
                 DieWithSystemMessage("time send() failed");
 
