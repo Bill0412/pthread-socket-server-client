@@ -19,6 +19,7 @@ void PressAnyKeyToContinue()
 {
     printf("(PRESS ANY KEY TO CONTINUE) ");
     fflush(stdout);
+    fflush(stdin);
     getchar();
     fflush(stdin);
 }
@@ -32,10 +33,12 @@ void*  msgListener(void* arg)
     if (numBytesRcvd < 0)
         DieWithSystemMessage("recv() failed.");
 
-
+#if 1
     printf("Message received from socket server %d: %s\n", sock, buffer);
     fflush(stdout);
+#endif
     stall = FALSE;
+
 
     for( ; ; ) {
         if(sock != -1) {
@@ -43,29 +46,35 @@ void*  msgListener(void* arg)
 
             if(numBytesRcvd <= 0)
                 continue;
-
+#if DEBUG
             printf("Message received from socket server %d: [%s]\n", sock, buffer);
             fflush(stdout);
             // printf("System Message: Enter to continue");
-
+#endif
             // issue solved by adding this
             char* inst = buffer; // why this works ????
-            int instLen = 6;
+
             char* instruction[5];
             memcpy(instruction, inst + 1, 4);
             instruction[5] = '\0';
-            printf("Instruction: %s", instruction);
-
+#if DEBUG
+            printf("Instruction: %s\n", instruction);
+#endif
             int isTime = !strcmp(instruction, "time");
             int isName = !strcmp(instruction, "name");
             int isList = !strcmp(instruction, "list");
-            if( isTime || isName) {
+            int isFromClnt = !strcmp(instruction, "clnt");
+
+            int instLen = 6;
+            if( isTime || isName || isFromClnt) {
                 for(char* c = buffer;; c++) {
                     if(*c == '}') {
                         *c = '\0';
                         break;
                     }
                 }
+
+                printf("instLen: %d\n", instLen);
                 if(isTime) {
 
                     printf("Server time: %s\n", inst + instLen);
@@ -80,6 +89,15 @@ void*  msgListener(void* arg)
                     PressAnyKeyToContinue();
                     stall = FALSE;
                 }
+
+                if(isFromClnt) {
+                    printf("Client Message Relayed: %s\n", inst + instLen);
+                    fflush(stdout);
+                    PressAnyKeyToContinue();
+                    stall = FALSE;
+                }
+
+
             } else if (isList){
                 printf("Server client list: %s\n", inst + instLen);
                 fflush(stdout);
@@ -87,9 +105,9 @@ void*  msgListener(void* arg)
                 stall = FALSE;
             } else {
                 // other input
-                printf("Server instruction: %s", inst);
+                printf("Other server message: %s\n", inst);
                 fflush(stdout);
-                PressAnyKeyToContinue();
+                // PressAnyKeyToContinue();
                 stall = FALSE;
             }
 

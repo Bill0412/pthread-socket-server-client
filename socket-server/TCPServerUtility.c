@@ -98,6 +98,8 @@ void HandleTCPClient(int clntSocket) {
         }
 
         // "list": list all the clients
+
+        // todo: list update fix
         if(*inst == 'l') {
             // to be modified to dynamic time
             char* list = FormatClientList();
@@ -131,8 +133,10 @@ void HandleTCPClient(int clntSocket) {
 //                    break;
 //                }
 //            }
+            char res[512];
+            sprintf(res, "{clnt:%s}", content);
 
-            numBytesSent = send(client_id, content, strlen(content), 0);
+            numBytesSent = send(client_id, res, strlen(res), 0);
             if(numBytesSent < 0)
                 DieWithSystemMessage("time send() failed");
 

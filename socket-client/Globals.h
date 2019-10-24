@@ -16,6 +16,7 @@ extern int stall;
 extern int quit;
 extern int sock;
 
+#define DEBUG 0
 
 // pthread client listener
 extern pthread_t tid;  // thread identifier

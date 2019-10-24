@@ -21,10 +21,13 @@ int main() {
     stall = FALSE;
     quit = FALSE;
     sock = -1; // when not connected, sock = -1
-
-    for(; ; ) {
+    int block_half = 0;
+    for(; ; block_half = !block_half) {
         if(!stall) {
-            display();
+            if(!block_half) {
+                display();
+            }
+
             response();
 
             if(quit) {

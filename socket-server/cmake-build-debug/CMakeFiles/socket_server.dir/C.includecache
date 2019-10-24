@@ -6,37 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/ClientList.c
+ClientList.h
 /Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/ClientList.h
-
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/DieWithMessage.h
-
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/TCPServerUtility.c
-TCPServerUtility.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/TCPServerUtility.h
-DieWithMessage.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/DieWithMessage.h
-sys/socket.h
--
-sys/types.h
--
-unistd.h
+stdlib.h
 -
 string.h
 -
 stdio.h
 -
-pthread.h
--
-math.h
--
-time.h
--
-unistd.h
--
-ClientList.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/ClientList.h
-stdlib.h
--
 
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/TCPServerUtility.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-server/ClientList.h
 

@@ -30,6 +30,8 @@ void AppendClientListUtility(struct ClientNode* node)
         return;
     }
 
+    client_list->count++;
+
     struct ClientNode* n = client_list->handle;
     for(; n->next; n = n->next);
     n->next = node;
@@ -63,6 +65,7 @@ char* FormatClientNode(struct ClientNode* node)
     return ptr;
 }
 
+// todo: fix potential bug
 char* FormatClientList()
 {
     const int res_limit = 1024;
@@ -88,11 +91,13 @@ char* FormatClientList()
 
 void RemoveNodeFromList(int sock)
 {
+    // todo: fix node not removed
     struct ClientNode* prevNode = client_list->handle;
     for(struct ClientNode* node = client_list->handle; node; node = node->next, prevNode = node) {
         if(node->sock == sock) {
             // remove the node
             // if it is the handle
+            client_list->count--;
             if(client_list->handle == node) {
                 free(node);
                 client_list->handle = NULL;

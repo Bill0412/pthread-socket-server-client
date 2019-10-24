@@ -25,16 +25,22 @@ void handleConnect()
     in_port_t servPort = 0;
     char *servIP = (char *)malloc(sizeof(char) * 100);
 
+#if DEBUG
+    servIP = "127.0.0.1";
+    servPort = 2881;
+#else
     printf("Server IP: ");
+    fflush(stdout);
     scanf("%s", servIP);
 
-    printf("Connect Port(0 for default port 2881): ");
+    printf("Connect Port: ");
+    fflush(stdout);
     scanf("%hd", &servPort);
-
+#endif
 
     sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 
-
+    printf("Socket created.\n");
     // Construct the server address structure
     struct sockaddr_in servAddr;    // Server address
     memset(&servAddr, 0, sizeof(servAddr)); // Zero out structure
@@ -58,8 +64,12 @@ void handleConnect()
     // set the default attributes of the thread
     pthread_attr_init(&attr);
 
-    // printf("\nsock outside pthread: %d\n", sock);
+#if DEBUG
+    printf("\nsock outside pthread: %d\n", sock);
+#endif
     pthread_create(&tid, &attr, msgListener, 0);
     stall = TRUE;
-    // printf("thread created");
+#if DEBUG
+    printf("thread created");
+#endif
 }
