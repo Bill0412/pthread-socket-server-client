@@ -12,31 +12,25 @@
 pthread.h
 -
 
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.c
-HandleConnect.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.h
-stdio.h
--
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.c
+MsgListener.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.h
 sys/types.h
--
-DieWithMessage.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/DieWithMessage.h
-netinet/in.h
 -
 string.h
 -
-arpa/inet.h
+DieWithMessage.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/DieWithMessage.h
+sys/socket.h
+-
+stdio.h
 -
 stdlib.h
 -
-pthread.h
--
-MsgListener.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.h
 Globals.h
 /Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/Globals.h
-
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.h
+pthread.h
+-
 
 /Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.h
 

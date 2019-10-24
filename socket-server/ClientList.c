@@ -93,14 +93,14 @@ void RemoveNodeFromList(int sock)
 {
     // todo: fix node not removed
     struct ClientNode* prevNode = client_list->handle;
-    for(struct ClientNode* node = client_list->handle; node; node = node->next, prevNode = node) {
+    for(struct ClientNode* node = client_list->handle; node; prevNode = node, node = node->next) {
         if(node->sock == sock) {
             // remove the node
             // if it is the handle
             client_list->count--;
             if(client_list->handle == node) {
+                client_list->handle = node->next;
                 free(node);
-                client_list->handle = NULL;
                 return;
             }
 

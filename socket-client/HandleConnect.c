@@ -29,6 +29,8 @@ void handleConnect()
     servIP = "127.0.0.1";
     servPort = 2881;
 #else
+    printf("(Recommended Destination: 127.0.0.1:2881)\n");
+
     printf("Server IP: ");
     fflush(stdout);
     scanf("%s", servIP);

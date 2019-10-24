@@ -15,11 +15,12 @@ int stall;
 int sock;
 #define BUFSIZE 1024
 
-void PressAnyKeyToContinue()
+void pressEnterToContinue()
 {
-    printf("(PRESS ANY KEY TO CONTINUE) ");
+    printf("\n(PRESS ENTER TO CONTINUE) ");
     fflush(stdout);
     fflush(stdin);
+    getchar();
     getchar();
     fflush(stdin);
 }
@@ -73,27 +74,28 @@ void*  msgListener(void* arg)
                         break;
                     }
                 }
-
+#if DEBUG
                 printf("instLen: %d\n", instLen);
+#endif
                 if(isTime) {
 
                     printf("Server time: %s\n", inst + instLen);
                     fflush(stdout);
-                    PressAnyKeyToContinue();
+                    pressEnterToContinue();
                     stall = FALSE;
                 }
 
                 if(isName) {
                     printf("Server name: %s\n", inst + instLen);
                     fflush(stdout);
-                    PressAnyKeyToContinue();
+                    pressEnterToContinue();
                     stall = FALSE;
                 }
 
                 if(isFromClnt) {
                     printf("Client Message Relayed: %s\n", inst + instLen);
                     fflush(stdout);
-                    PressAnyKeyToContinue();
+                    pressEnterToContinue();
                     stall = FALSE;
                 }
 
@@ -101,13 +103,14 @@ void*  msgListener(void* arg)
             } else if (isList){
                 printf("Server client list: %s\n", inst + instLen);
                 fflush(stdout);
-                PressAnyKeyToContinue();
+
+                pressEnterToContinue();
                 stall = FALSE;
             } else {
                 // other input
                 printf("Other server message: %s\n", inst);
                 fflush(stdout);
-                // PressAnyKeyToContinue();
+                // pressAnyKeyToContinue();
                 stall = FALSE;
             }
 

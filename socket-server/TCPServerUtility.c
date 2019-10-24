@@ -99,7 +99,7 @@ void HandleTCPClient(int clntSocket) {
 
         // "list": list all the clients
 
-        // todo: list update fix
+        // todo: pretty print the list
         if(*inst == 'l') {
             // to be modified to dynamic time
             char* list = FormatClientList();

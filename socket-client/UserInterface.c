@@ -42,7 +42,7 @@ void  display()
 
 void displayDisconnected()
 {
-    printf("\n\n");
+    printf("\n");
     fflush(stdin);
     printf("Welcome using the socket client!\n");
     printf("[c] connect to a server\n");
@@ -53,7 +53,7 @@ void displayDisconnected()
 
 void displayConnected()
 {
-    printf("\n\n");
+    printf("\n");
     fflush(stdin);
     printf("[c] (c)onnect to a server\n");
     printf("[x] close the connection\n");
@@ -160,7 +160,10 @@ void handleSendToClient()
     printf("Please choose the client to send: ");
     // todo: check if in the list, so analyze the list beforehand, client -server mapping
     scanf("%d", &clntSock);
+
+#if DEBUG
     printf("clntSock: %d\n", &clntSock);
+#endif
 
     // if not in the client list
     printf("Please enter the message to send: (no space)");
