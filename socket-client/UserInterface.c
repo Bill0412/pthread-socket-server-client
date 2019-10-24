@@ -107,7 +107,6 @@ void handleQuit()
 
 void handleClose()
 {
-    // todo: fix client socket and exception handling in FormatClientList
     char inst[] = "close";
     int numBytesSent = send(sock, inst, strlen(inst), 0);
     if(numBytesSent < 0)
@@ -158,7 +157,7 @@ void handleSendToClient()
 
     // this part should be in the thread
     printf("Please choose the client to send: ");
-    // todo: check if in the list, so analyze the list beforehand, client -server mapping
+    // TODO: list the client info beforehand and check input
     scanf("%d", &clntSock);
 
 #if DEBUG

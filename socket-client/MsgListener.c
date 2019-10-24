@@ -101,6 +101,7 @@ void*  msgListener(void* arg)
 
 
             } else if (isList){
+                // TODO: pretty print the client list and store them.
                 printf("Server client list: %s\n", inst + instLen);
                 fflush(stdout);
 

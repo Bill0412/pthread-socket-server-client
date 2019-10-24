@@ -11,7 +11,7 @@
 
 #define BUFSIZE 1024
 
-// TODO: 1. fix linked list; 2. README.md.
+// TODO: README.md
 int stage;
 int stall;
 int quit;

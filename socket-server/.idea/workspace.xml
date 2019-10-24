@@ -13,21 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="624c2a8b-dff6-49e8-8e2a-cc169f279cb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../socket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-client/HandleConnect.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/HandleConnect.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-client/MsgListener.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/MsgListener.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-client/UserInterface.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/UserInterface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/HandleConnect.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/HandleConnect.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/MsgListener.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/MsgListener.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/UserInterface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/UserInterface.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/socket_client" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/socket_client" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-client/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientList.c" beforeDir="false" afterPath="$PROJECT_DIR$/ClientList.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TCPServerUtility.c" beforeDir="false" afterPath="$PROJECT_DIR$/TCPServerUtility.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_server.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_server.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_server.dir/ClientList.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_server.dir/ClientList.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/socket_server" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/socket_server" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -204,12 +192,12 @@
       <workItem from="1571675452005" duration="18786000" />
       <workItem from="1571767834442" duration="2952000" />
       <workItem from="1571807279987" duration="1550000" />
-      <workItem from="1571857707712" duration="15963000" />
+      <workItem from="1571857707712" duration="16087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58652000" />
+    <option name="totallyTimeSpent" value="58776000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

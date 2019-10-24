@@ -12,22 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79d58681-5ef0-4669-b5b9-6b24765d9eaa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandleConnect.c" beforeDir="false" afterPath="$PROJECT_DIR$/HandleConnect.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MsgListener.c" beforeDir="false" afterPath="$PROJECT_DIR$/MsgListener.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserInterface.c" beforeDir="false" afterPath="$PROJECT_DIR$/UserInterface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/HandleConnect.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/HandleConnect.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/MsgListener.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/MsgListener.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/UserInterface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_client.dir/UserInterface.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/socket_client" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/socket_client" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-server/ClientList.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/ClientList.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-server/TCPServerUtility.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/TCPServerUtility.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/ClientList.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/CMakeFiles/socket_server.dir/ClientList.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../socket-server/cmake-build-debug/socket_server" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-server/cmake-build-debug/socket_server" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +29,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+                <state relative-caret-position="221">
+                  <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -53,11 +41,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/UserInterface.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2268">
-                  <caret line="163" column="9" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
+                <state relative-caret-position="476">
+                  <caret line="159" column="11" selection-start-line="159" selection-start-column="11" selection-end-line="159" selection-end-column="11" />
                   <folding>
                     <element signature="e#46#72#0" expanded="true" />
                     <element signature="e#3832#3868#0" expanded="true" />
@@ -96,8 +84,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MsgListener.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+                <state relative-caret-position="560">
+                  <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
                   <folding>
                     <element signature="e#46#70#0" expanded="true" />
                     <element signature="e#987#1146#0" expanded="true" />
@@ -131,10 +119,10 @@
         <option value="$PROJECT_DIR$/MsgListener.h" />
         <option value="$PROJECT_DIR$/Practical.h" />
         <option value="$PROJECT_DIR$/Globals.h" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/HandleConnect.c" />
         <option value="$PROJECT_DIR$/UserInterface.c" />
         <option value="$PROJECT_DIR$/MsgListener.c" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
@@ -211,12 +199,12 @@
       <workItem from="1571578433315" duration="15908000" />
       <workItem from="1571675488901" duration="22749000" />
       <workItem from="1571767905953" duration="2402000" />
-      <workItem from="1571808691988" duration="17780000" />
+      <workItem from="1571808691988" duration="18086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58839000" />
+    <option name="totallyTimeSpent" value="59145000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -236,14 +224,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20150943" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20150943" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32301888" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32830188" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32830188" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.4045283" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.38188678" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.38113207" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32953367" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32830188" />
@@ -374,20 +362,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
+    <entry file="file://$PROJECT_DIR$/MsgListener.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="560">
+          <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#46#70#0" expanded="true" />
+            <element signature="e#987#1146#0" expanded="true" />
+            <element signature="e#1391#1432#0" expanded="true" />
+            <element signature="e#1957#1990#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserInterface.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="163" column="9" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
+        <state relative-caret-position="476">
+          <caret line="159" column="11" selection-start-line="159" selection-start-column="11" selection-end-line="159" selection-end-column="11" />
           <folding>
             <element signature="e#46#72#0" expanded="true" />
             <element signature="e#3832#3868#0" expanded="true" />
@@ -395,15 +386,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MsgListener.c">
+    <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="221">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding>
-            <element signature="e#46#70#0" expanded="true" />
-            <element signature="e#987#1146#0" expanded="true" />
-            <element signature="e#1391#1432#0" expanded="true" />
-            <element signature="e#1957#1990#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
