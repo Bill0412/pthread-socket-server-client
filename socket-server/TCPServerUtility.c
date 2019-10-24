@@ -126,13 +126,13 @@ void HandleTCPClient(int clntSocket) {
             // get the content to send
             char* content = inst + i + 1;
 
-//            // filter out the extra tail
-//            for(char* c = content; ; c++) {
-//                if(*c == '\\') {
-//                    *c = '\0';
-//                    break;
-//                }
-//            }
+            // filter out the extra tail
+            for(char* c = content; ; c++) {
+                if(*c == '}') {
+                    *c = '\0';
+                    break;
+                }
+            }
             char res[512];
             sprintf(res, "{clnt:%s}", content);
 

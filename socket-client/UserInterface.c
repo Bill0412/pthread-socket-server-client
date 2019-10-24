@@ -152,12 +152,9 @@ void handleSendToClient()
     int clntSock;
     char msg[512];
 
-    // printf("Follwing is the client list:\n");
-    // handleListClients();
-
     // this part should be in the thread
     printf("Please choose the client to send: ");
-    // TODO: list the client info beforehand and check input
+
     scanf("%d", &clntSock);
 
 #if DEBUG
@@ -165,11 +162,11 @@ void handleSendToClient()
 #endif
 
     // if not in the client list
-    printf("Please enter the message to send: (no space)");
+    printf("Please enter the message to send(no space): ");
     scanf("%s", msg);
 
     char inst[1024];
-    sprintf(inst, "send:%d:%s", clntSock, msg);
+    sprintf(inst, "send:%d:%s}", clntSock, msg);
     int numBytesSent = send(sock, inst, strlen(inst), 0);
     if(numBytesSent < 0)
         DieWithSystemMessage("send() failed.");

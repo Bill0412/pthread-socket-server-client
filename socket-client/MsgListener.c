@@ -11,6 +11,8 @@
 #include <stdlib.h>
 #include "Globals.h"
 #include <pthread.h>
+#include "ClientList.h"
+
 int stall;
 int sock;
 #define BUFSIZE 1024
@@ -102,8 +104,11 @@ void*  msgListener(void* arg)
 
             } else if (isList){
                 // TODO: pretty print the client list and store them.
-                printf("Server client list: %s\n", inst + instLen);
-                fflush(stdout);
+
+                RetrieveListFromString(inst + instLen);
+
+                printf("Following is the client list: \n");
+                PrettyPrintClientList();
 
                 pressEnterToContinue();
                 stall = FALSE;

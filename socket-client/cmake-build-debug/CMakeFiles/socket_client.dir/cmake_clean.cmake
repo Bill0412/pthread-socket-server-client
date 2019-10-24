@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/socket_client.dir/UserInterface.c.o"
   "CMakeFiles/socket_client.dir/HandleConnect.c.o"
   "CMakeFiles/socket_client.dir/MsgListener.c.o"
+  "CMakeFiles/socket_client.dir/ClientList.c.o"
   "socket_client.pdb"
   "socket_client"
 )

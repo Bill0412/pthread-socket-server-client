@@ -123,6 +123,33 @@ socket_client/fast:
 	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/build
 .PHONY : socket_client/fast
 
+ClientList.o: ClientList.c.o
+
+.PHONY : ClientList.o
+
+# target to build an object file
+ClientList.c.o:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/ClientList.c.o
+.PHONY : ClientList.c.o
+
+ClientList.i: ClientList.c.i
+
+.PHONY : ClientList.i
+
+# target to preprocess a source file
+ClientList.c.i:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/ClientList.c.i
+.PHONY : ClientList.c.i
+
+ClientList.s: ClientList.c.s
+
+.PHONY : ClientList.s
+
+# target to generate assembly for a file
+ClientList.c.s:
+	$(MAKE) -f CMakeFiles/socket_client.dir/build.make CMakeFiles/socket_client.dir/ClientList.c.s
+.PHONY : ClientList.c.s
+
 DieWithMessage.o: DieWithMessage.c.o
 
 .PHONY : DieWithMessage.o
@@ -267,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... socket_client"
+	@echo "... ClientList.o"
+	@echo "... ClientList.i"
+	@echo "... ClientList.s"
 	@echo "... DieWithMessage.o"
 	@echo "... DieWithMessage.i"
 	@echo "... DieWithMessage.s"

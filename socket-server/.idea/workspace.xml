@@ -12,10 +12,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="624c2a8b-dff6-49e8-8e2a-cc169f279cb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../socket-client/ClientList.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socket-client/ClientList.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-client/MsgListener.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/MsgListener.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-client/UserInterface.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/UserInterface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/MsgListener.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/MsgListener.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/UserInterface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/UserInterface.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/CMakeFiles/socket_client.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/socket_client" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/socket_client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socket-client/cmake-build-debug/socket_client.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/cmake-build-debug/socket_client.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socket-client/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../socket-client/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TCPServerUtility.c" beforeDir="false" afterPath="$PROJECT_DIR$/TCPServerUtility.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_server.dir/TCPServerUtility.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/socket_server.dir/TCPServerUtility.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/socket_server" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/socket_server" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +64,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ClientList.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1022">
-                  <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+                <state relative-caret-position="1088">
+                  <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
                   <folding>
                     <element signature="e#47#70#0" expanded="true" />
                   </folding>
@@ -50,11 +73,32 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DieWithMessage.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="2" selection-start-column="2" selection-end-column="2" />
+                  <folding>
+                    <element signature="e#45#67#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DieWithMessage.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/TCPServerUtility.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-18">
-                  <caret line="101" column="38" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+                <state relative-caret-position="1734">
+                  <caret line="102" column="15" lean-forward="true" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
                   <folding>
                     <element signature="e#67#96#0" expanded="true" />
                   </folding>
@@ -74,6 +118,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Practical.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -81,8 +134,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ClientList.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -114,10 +167,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1920" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -192,12 +244,12 @@
       <workItem from="1571675452005" duration="18786000" />
       <workItem from="1571767834442" duration="2952000" />
       <workItem from="1571807279987" duration="1550000" />
-      <workItem from="1571857707712" duration="16087000" />
+      <workItem from="1571857707712" duration="19961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58776000" />
+    <option name="totallyTimeSpent" value="62650000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -209,21 +261,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16932908" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16918188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49852508" visible="true" weight="0.18341969" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41139898" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49852508" visible="true" weight="0.1335849" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41132075" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32953367" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32227978" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32226416" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32746115" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014749" side_tool="true" weight="0.28025478" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32981133" />
@@ -262,11 +314,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/TCPServerUtility.c</url>
-          <line>102</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/TCPServerUtility.c</url>
           <line>63</line>
@@ -323,23 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DieWithMessage.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#45#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Practical.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Acceptor.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -357,17 +387,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DieWithMessage.h">
+    <entry file="file://$PROJECT_DIR$/TCPServerUtility.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ClientList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="272">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientList.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+          <folding>
+            <element signature="e#47#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DieWithMessage.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+          <folding>
+            <element signature="e#45#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DieWithMessage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -381,27 +438,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClientList.c">
+    <entry file="file://$PROJECT_DIR$/Practical.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1022">
-          <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
-          <folding>
-            <element signature="e#47#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TCPServerUtility.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TCPServerUtility.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="101" column="38" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+        <state relative-caret-position="1734">
+          <caret line="102" column="15" lean-forward="true" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
           <folding>
             <element signature="e#67#96#0" expanded="true" />
           </folding>

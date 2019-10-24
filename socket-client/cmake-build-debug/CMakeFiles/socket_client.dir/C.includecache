@@ -12,25 +12,31 @@
 pthread.h
 -
 
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.c
-MsgListener.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.h
-sys/types.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.h
+
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/Practical.h
+DieWithMessage.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/DieWithMessage.h
+UserInterface.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.h
+
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.c
+UserInterface.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.h
+stdio.h
+-
+HandleConnect.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/HandleConnect.h
+Globals.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/Globals.h
+sys/socket.h
+-
+unistd.h
 -
 string.h
 -
-DieWithMessage.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/DieWithMessage.h
-sys/socket.h
--
-stdio.h
--
-stdlib.h
--
-Globals.h
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/Globals.h
-pthread.h
--
 
-/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/MsgListener.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/UserInterface.h
+Practical.h
+/Users/fenghexu/OneDrive - zju.edu.cn/Documents/ZJU/Courses/2019 Fall & Winter/Computer Networks/Lab/Lab3/socket/socket-client/Practical.h
 

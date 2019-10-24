@@ -8,6 +8,7 @@
 #include <arpa/inet.h>
 #include "Practical.h"
 #include "Globals.h"
+#include "ClientList.h"
 
 #define BUFSIZE 1024
 
@@ -21,6 +22,9 @@ int main() {
     stall = FALSE;
     quit = FALSE;
     sock = -1; // when not connected, sock = -1
+
+    InitClientList();
+
     int block_half = 0;
     for(; ; block_half = !block_half) {
         if(!stall) {
