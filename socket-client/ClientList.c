@@ -171,10 +171,10 @@ void RetrieveListFromString(char* strList)
 
 void PrettyPrintClientList()
 {
-    printf("sock id \t ip address \t port\n");
+    printf("\tsock id \t ip address \t port\n");
 
     for(struct ClientNode* node = client_list->handle; node; node = node->next) {
-        printf("\t%d \t\t %s \t\t %d\n", node->sock, node->ip_address, node->port);
+        printf("\t%d \t\t %s \t %d\n", node->sock, node->ip_address, node->port);
     }
     fflush(stdout);
 }
