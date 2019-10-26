@@ -1,10 +1,10 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -fmax-errors=10 -Wextra -lpthread -g
 
-objects = main.o Acceptor.o ClientList.o DieWithMessage.o TCPServerUtility.o
+objects = main.o Acceptor.o ClientList.o DieWithMessage.o TCPServerUtility.o 
 
-socket_server: $(objects)
-	$(CC) -o socket_server $(objects)
+socket_server: $(objects) -lm -lpthread
+	$(CC) -o socket_server $(objects) -lm -lpthread
 
 main.o: Practical.h ClientList.h
 
