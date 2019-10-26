@@ -22,7 +22,7 @@ void pressEnterToContinue()
     printf("\n(PRESS ENTER TO CONTINUE) ");
     fflush(stdout);
     fflush(stdin);
-    getchar();
+    // getchar();
     getchar();
     fflush(stdin);
 }

@@ -7,6 +7,7 @@
 #include <string.h>
 #include <stdio.h>
 
+#define res_limit 1024
 
 struct ClientList *client_list;
 
@@ -68,8 +69,7 @@ char* FormatClientNode(struct ClientNode* node)
 // todo: fix potential bug
 char* FormatClientList()
 {
-    const int res_limit = 1024;
-    char res[res_limit] = "";
+    char res[res_limit];
 
     for(struct ClientNode* node = client_list->handle; node; node = node->next) {
         char* sub = FormatClientNode(node);
