@@ -71,7 +71,7 @@ char* FormatClientNode(struct ClientNode* node)
 char* FormatClientList()
 {
     const int res_limit = 1024;
-    char res[res_limit] = "";
+    char res[res_limit];
 
     for(struct ClientNode* node = client_list->handle; node; node = node->next) {
         char* sub = FormatClientNode(node);
