@@ -170,5 +170,5 @@ void handleSendToClient()
     int numBytesSent = send(sock, inst, strlen(inst), 0);
     if(numBytesSent < 0)
         DieWithSystemMessage("send() failed.");
-    // stall = TRUE;
+    stall = TRUE;
 }

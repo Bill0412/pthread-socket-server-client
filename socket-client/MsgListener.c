@@ -54,7 +54,8 @@ void*  msgListener(void* arg)
             fflush(stdout);
             // printf("System Message: Enter to continue");
 #endif
-            char* inst = buffer;
+            // issue solved by adding this
+            char* inst = buffer; // why this works ????
 
             char* instruction[5];
             memcpy(instruction, inst + 1, 4);
@@ -66,7 +67,7 @@ void*  msgListener(void* arg)
             int isName = !strcmp(instruction, "name");
             int isList = !strcmp(instruction, "list");
             int isFromClnt = !strcmp(instruction, "clnt");
-        
+
             int instLen = 6;
             if( isTime || isName || isFromClnt) {
                 for(char* c = buffer;; c++) {
@@ -94,7 +95,7 @@ void*  msgListener(void* arg)
                 }
 
                 if(isFromClnt) {
-                    printf("\nClient Message Relayed: %s\n", inst + instLen);
+                    printf("Client Message Relayed: %s\n", inst + instLen);
                     fflush(stdout);
                     pressEnterToContinue();
                     stall = FALSE;
@@ -102,6 +103,7 @@ void*  msgListener(void* arg)
 
 
             } else if (isList){
+                // TODO: pretty print the client list and store them.
 
                 RetrieveListFromString(inst + instLen);
 
