@@ -10,7 +10,7 @@ main.o: Practical.h ClientList.h
 
 Acceptor.o: Practical.h ClientList.h Acceptor.h 
 
-ClientList.o: ClientList.h
+ClientList.o: ClientList.h DieWithMessage.h
 
 DieWithMessage.o: Practical.h DieWithMessage.h
 

@@ -26,6 +26,8 @@ char* FormatClientList();
 
 void RemoveNodeFromList(int sock);
 
+struct ClientList* GetClientList();
 
+void* UpdateClientList();
 
 #endif //SOCKET_SERVER_CLIENTLIST_H

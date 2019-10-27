@@ -81,7 +81,6 @@ void HandleTCPClient(int clntSocket) {
 
         // "name": get machine name
         if(*inst == 'n') {
-            // to be modified to dynamic time
             const int name_limit = 128;
             char name[name_limit];
 
@@ -92,24 +91,22 @@ void HandleTCPClient(int clntSocket) {
 
             numBytesSent = send(clntSocket, res, strlen(res), 0);
             if(numBytesSent < 0)
-                DieWithSystemMessage("time send() failed");
+                DieWithSystemMessage("name send() failed");
 
             printf("Action: sent machine name [%s] to the client\n", name);
         }
 
         // "list": list all the clients
-
-        // todo: pretty print the list
         if(*inst == 'l') {
-            // to be modified to dynamic time
+            
             char* list = FormatClientList();
 
             numBytesSent = send(clntSocket, list, strlen(list), 0);
             if(numBytesSent < 0)
-                DieWithSystemMessage("time send() failed");
+                DieWithSystemMessage("list send() failed");
 
             free(list);
-           printf("Action: sent client list to the client\n");
+            printf("Action: sent client list to the client\n");
         }
 
         // send

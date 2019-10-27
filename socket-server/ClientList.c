@@ -6,6 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#include <sys/socket.h>
+#include "DieWithMessage.h"
 
 #define res_limit 1024
 
@@ -115,5 +117,29 @@ void RemoveNodeFromList(int sock)
             prevNode->next = node->next;
             free(node);
         }
+    }
+}
+
+struct ClientList* GetClientList()
+{
+    return client_list;
+}
+
+void* UpdateClientList()
+{
+    for( ; ; ) {
+        int error, ret;
+        socklen_t len = sizeof(error);
+        for(struct ClientNode* node = GetClientList()->handle; node; node = node->next) {
+            sleep(1);
+            char alive_msg = "{alive}";
+            int numBytesSent = send(node->sock, alive_msg, sizeof(alive_msg), 0);
+            if(numBytesSent < 0) {
+                 printf("Client %d disconnected unexpectedly.\n", node->sock);
+                 RemoveNodeFromList(node->sock);
+                 printf("Removed  client sock %s from the client list\n", node->sock);
+                 fflush(stdout);
+             }
+         }
     }
 }
